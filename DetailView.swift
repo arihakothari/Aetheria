@@ -1297,7 +1297,3 @@ struct BenchmarkingChart: View {
         .cornerRadius(10)
     }
 }
-
-
-
-
