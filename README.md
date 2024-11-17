@@ -1,14 +1,18 @@
 # Aetheria - Revolutionizing Building Sustainability Management  
 
+<p align="center">
+  <img src="https://i.imgur.com/zSE31mi.png" alt="Homepage" width="25%" />
+</p>
+
 ## Inspiration  
-With sustainability at the forefront of global concerns, we recognized that buildings are significant contributors to resource consumption and waste generation. Yet, many facilities lack the granular data needed to make impactful changes. Inspired by the potential of IoT and machine learning to drive environmental efficiency, our team of four set out to create a solution that empowers building managers to make data-driven decisions, reduce waste, and optimize resource usage. By harnessing technology, we believe we can transform buildings into models of sustainability.  
+With sustainability at the forefront of global concerns, we recognized that buildings significantly contribute to resource consumption and waste generation. Yet, many facilities lack the granular data needed to make impactful changes. Inspired by the potential of IoT and machine learning to drive environmental efficiency, our team of four created a solution that empowers building managers to make data-driven decisions, reduce waste, and optimize resource usage. By harnessing technology, we believe we can transform buildings into sustainability models.  
 
 ## What It Does  
 Aetheria is a Swift-based mobile application designed to revolutionize building sustainability management. While we plan to collect real-time data from strategically placed sensors throughout a building—including trash cans, rooms, electrical panels, water outlets, and HVAC systems—our current prototype simulates this data to provide a comprehensive overview of the building's environmental footprint. Key features include:  
 
 - **Sustainability Dial**: Utilizes machine learning linear regression to compute an overall sustainability score, categorizing it as high, medium, or low based on historical and current data trends.  
-- **Priority Ranking**: Lists building sections from worst to best in terms of sustainability issues. Users can delve into each section to view detailed problems, AI-powered solutions, estimated offsets, and cost-benefit analyses.  
-- **Interactive Map**: Displays precise locations of identified issues within the building, enabling quick action and resource allocation.  
+- **Priority Ranking**: This section lists building sections from worst to best in terms of sustainability issues. Users can delve into each section to view detailed problems, AI-powered solutions, estimated offsets, and cost-benefit analyses.  
+- **Interactive Map**: This section displays precise locations of identified issues within the building, enabling quick action and resource allocation.  
 - **Trend Analysis**: Leverages historical data to perform comparative analyses, highlighting improvements or regressions in sustainability metrics over time.  
 
 ## How We Built It  
@@ -24,7 +28,7 @@ This approach allowed us to focus on developing a seamless user experience while
 - **Simulated Data**: Creating realistic sensor data streams to test functionalities effectively required understanding expected sensor outputs and interactions over time.  
 - **Machine Learning Without Real Data**: Implementing robust models without access to real-world data was a challenge that required meticulous validation and testing.  
 - **Component Integration**: Combining machine learning models, mock backend services, and a user-friendly interface required extensive debugging and planning.  
-- **User Interface Design**: Designing an intuitive interface that presents complex sustainability data accessibly required several iterations.  
+- **User Interface Design**: Designing an intuitive interface that presents complex sustainability data accessibly requires several iterations.  
 
 ## Accomplishments That We're Proud Of  
 - Developing a fully functional software prototype within the hackathon timeframe.  
@@ -50,5 +54,4 @@ This approach allowed us to focus on developing a seamless user experience while
 - **Swift**  
 - **Team Collaboration**  
 
----  
-*Join us in making buildings smarter and more sustainable with Aetheria!*
+---
