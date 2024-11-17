@@ -29,9 +29,9 @@ import MapKit
 //}
 
 // Constants
-let customBackgroundColor = Color(hex: "061b19") // Hex: #061b19
-let containerColor = Color(hex: "396261") // Hex: #396261
-let lightBlueColor = Color(hex: "#D1E9EA") // Hex: #D1E9EA
+let customBackgroundColor = Color(hex: "061b19")
+let containerColor = Color(hex: "396261")
+let lightBlueColor = Color(hex: "#D1E9EA")
 
 enum ProblemType {
     case electricity
@@ -52,8 +52,8 @@ struct ProblemArea: Identifiable {
 // Views
 struct DialView: View {
     @State private var sustainabilityScore: Double = 0
-    @State private var animatedScore: Int = 0 // New state for animated score
-    @State private var showScoreLabel = false // New state to control "High" visibility
+    @State private var animatedScore: Int = 0
+    @State private var showScoreLabel = false
     @State private var problematicAreas: [ProblemArea] = []
 
     var body: some View {
@@ -83,7 +83,7 @@ struct DialView: View {
 
                         VStack {
                             Spacer()
-                                .frame(height: 100) // Move the score text down within the top half
+                                .frame(height: 100)
 
                             Text(scoreLabel)
                                 .font(.custom("Avenir", size: 45))
@@ -98,7 +98,7 @@ struct DialView: View {
                                 .foregroundColor(.white)
                         }
                     }
-                    .frame(width: 250, height: 250) // Fixed size for the speedometer
+                    .frame(width: 250, height: 250)
 
                     // Updated NavigationLink to Blueprint
                     NavigationLink(destination: Blueprint()) {
@@ -113,7 +113,7 @@ struct DialView: View {
                     }
                     .padding(.top, 1)
                 }
-                .frame(height: 320) // Fixed height for the top half
+                .frame(height: 320)
 
                 // Bottom Half
                 VStack {
@@ -131,10 +131,10 @@ struct DialView: View {
                                     .frame(width: 21, height: 27)
 
                                 VStack(alignment: .leading, spacing: 5) {
-                                    // Make names bold
+                                    
                                     Text(area.name)
                                         .font(.custom("Avenir", size: 18))
-                                        .fontWeight(.bold) // Bold the text for the name
+                                        .fontWeight(.bold)
                                         .foregroundColor(.white)
                                     Text(area.description)
                                         .font(.custom("Avenir", size: 14))
@@ -166,7 +166,7 @@ struct DialView: View {
                             }
                         }
                         .padding()
-                        .background(containerColor) // Updated container color
+                        .background(containerColor) 
                         .cornerRadius(10)
                         .listRowBackground(Color.clear)
                     }
@@ -270,4 +270,3 @@ struct DetailsView: View {
 #Preview {
     DialView()
 }
-
