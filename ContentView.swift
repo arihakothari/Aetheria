@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Constants
-    private let buttonColor = Color(hex: "5ab8ad") // Hex: #5AB8AD
-    private let customBackgroundColor = Color(hex: "061b19") // Hex: #061b19
+    private let buttonColor = Color(hex: "5ab8ad")
+    private let customBackgroundColor = Color(hex: "061b19")
 
-    // Animation state variables
     @State private var logoAndTitleVisible = false
     @State private var taglineVisible = false
     @State private var buttonVisible = false
@@ -28,7 +26,7 @@ struct ContentView: View {
                         Text("Aetheria")
                             .font(.custom("Avenir", size: 50))
                             .fontWeight(.bold)
-                            .foregroundColor(buttonColor) // Match title color to button color
+                            .foregroundColor(buttonColor)
                             .opacity(logoAndTitleVisible ? 1 : 0)
                             .scaleEffect(logoAndTitleVisible ? 1 : 0.8)
                             .animation(.easeInOut(duration: 1), value: logoAndTitleVisible)
@@ -50,7 +48,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(buttonColor) // Button color
+                                .background(buttonColor)
                                 .cornerRadius(10)
                                 .padding(.horizontal, 20)
                                 .opacity(buttonVisible ? 1 : 0)
