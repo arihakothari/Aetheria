@@ -52,6 +52,5 @@ This approach allowed us to focus on developing a seamless user experience while
 ## Built With  
 - **Python**  
 - **Swift**  
-- **Team Collaboration**  
 
 ---
